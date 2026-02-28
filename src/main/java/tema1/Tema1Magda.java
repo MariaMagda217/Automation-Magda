@@ -1,4 +1,4 @@
-package org.Magda0.mgd;
+package tema1;
 
 public class Tema1Magda {
 
