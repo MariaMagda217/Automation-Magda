@@ -15,7 +15,6 @@ public class Main {
         boolean areAnimal = true;
         int nrAnimale = 1;
         boolean esteSingurLaParinti = true;
-
         System.out.println(name);
         System.out.println(age);
         System.out.println(NumeDeFamilie);
