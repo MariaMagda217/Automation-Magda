@@ -62,10 +62,17 @@ public class XPathLocatori {
 
         //PopUp
 
-        //  WebElement popup = driver.findElement(By.xpath("//table[@class='table table-dark table-striped table-bordered table-hover']"));
-        //  WebElement close = driver.findElement(By.xpath("//button[@id='closeLargeModal']"));
-        // close.click();
 
+        //   WebElement close = driver.findElement(By.xpath("//button[@id='closeLargeModal']"));
+        // ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", close);
+        // ((JavascriptExecutor) driver).executeScript("arguments[0].click();", close);
+
+        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+        //WebElement close = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='modal-content']//button[@id='closeLargeModal']")));
+
+        //((JavascriptExecutor) driver).executeScript("arguments[0].click();", close);
+
+        WebElement popUp = driver.findElement(By.xpath("//button[@id='closeLargeModal']"));
+        popUp.sendKeys(Keys.ESCAPE);
     }
 }
-
