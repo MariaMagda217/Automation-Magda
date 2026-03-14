@@ -83,22 +83,16 @@ public class PracticeSoftwareTesting {
 
     @Test
     public void assertFilters() {
-        WebElement filtersElement = driver.findElement(By.id("filters"));
+        List<WebElement> filtersElements = driver.findElements(By.xpath("//*[starts-with(@data-test, 'category-')]"));
+        WebElement firsFilter = filtersElements.getFirst();
 
         Actions actions = new Actions(driver);
-        actions.moveToElement(filtersElement).perform();
+        actions.moveToElement(firsFilter).perform();
 
-        List<WebElement> fieldsetElements = filtersElement.findElements(By.tagName("fieldset"));
-        WebElement firstFieldsetElement = fieldsetElements.getFirst();
+        List<WebElement> checkboxElements = driver.findElements(By.xpath("//*[starts-with(@data-test, 'category-')]"));
+        WebElement firstCheckboxElement = checkboxElements.get(1);
 
-        List<WebElement> checkboxElements = firstFieldsetElement.findElements(By.className("checkbox"));
-        WebElement handToolCheckboxElement = checkboxElements.getFirst();
-
-        List<WebElement> handToolElements = handToolCheckboxElement.findElements(By.className("checkbox"));
-        WebElement hammerElement = handToolElements.getFirst();
-
-        WebElement checkboxHammerElement = hammerElement.findElement(By.className("icheck"));
-        checkboxHammerElement.click();
+        firstCheckboxElement.click();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@data-test='filter_completed']")));
