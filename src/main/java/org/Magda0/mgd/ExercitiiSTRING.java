@@ -21,6 +21,4 @@ public class ExercitiiSTRING {
         String noulText = text.replace("mere" , "banane");
         System.out.println("inlocuire spatii: " + noulText);
     }
-
-
 }

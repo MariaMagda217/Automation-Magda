@@ -27,7 +27,7 @@ public class PracticeSoftwareTesting {
 
     @AfterMethod
     public void tearDown() {
-        driver.quit();
+        //   driver.quit();
     }
 
     @Test
@@ -84,10 +84,11 @@ public class PracticeSoftwareTesting {
     @Test
     public void assertFilters() {
         List<WebElement> filtersElements = driver.findElements(By.xpath("//*[starts-with(@data-test, 'category-')]"));
-        WebElement firsFilter = filtersElements.getFirst();
+        WebElement firstFilter = filtersElements.getFirst();
 
         Actions actions = new Actions(driver);
-        actions.moveToElement(firsFilter).perform();
+        actions.moveToElement(firstFilter).perform();
+
 
         List<WebElement> checkboxElements = driver.findElements(By.xpath("//*[starts-with(@data-test, 'category-')]"));
         WebElement firstCheckboxElement = checkboxElements.get(1);

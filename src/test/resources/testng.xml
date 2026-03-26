@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="TestMagda">
+
+    <test name="TesteGroups">
+        <groups>
+            <run>
+                <include name="regression"></include>
+                <include name="smoke"></include>
+                <exclude name="slow"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="testng.Class1">
+            </class>
+            <class name="testng.Class2">
+            </class>
+            <class name="testng.Class3">
+            </class>
+        </classes>
+
+    </test>
+
+</suite>
