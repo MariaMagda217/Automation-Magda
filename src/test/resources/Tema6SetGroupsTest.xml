@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Tema6Set">
+
+    <test name="Tema6Set">
+        <groups>
+            <run>
+                <include name="test_page"/>
+                <include name="english_joke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Tema6.SetGroupsTest">
+            </class>
+        </classes>
+
+    </test>
+
+</suite>
