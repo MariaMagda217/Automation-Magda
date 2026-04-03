@@ -71,7 +71,7 @@ public class OpenSiteTab {
         driver.switchTo().newWindow(WindowType.TAB);
         driver.get(PRACTICE_SOFTWARE_TESTING);
 
-        //Set<String> allTabs = driver.getWindowHandles();???
+        //Set<String> allTabs = driver.getWindowHandles();
         List<String> allTabs = new ArrayList<>(driver.getWindowHandles());
 
         driver.switchTo().window(allTabs.getFirst());
