@@ -7,12 +7,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class verifyProduct {
+public class VerifyProductTest {
     @Test
     public void verifyProductDetails() {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-
 
         HomePage home = new HomePage(driver);
         ProductPage product = new ProductPage(driver);
