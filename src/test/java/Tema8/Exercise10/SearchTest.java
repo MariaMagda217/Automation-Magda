@@ -6,7 +6,7 @@ public class SearchTest extends TestCase {
     }
 
     public void runTest() {
-        System.out.println("Executed Login test: " + name);
-        System.out.println(" Checking login functionality  ");
+        System.out.println("Executed search test: " + name);
+        System.out.println(" Checking search functionality  ");
     }
 }

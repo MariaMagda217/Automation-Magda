@@ -4,8 +4,7 @@ package Tema8.Exercise10;
 //Mini framework
 //Creează:TestCase →protected name +
 //metodă runTest()
-//clase copil:LoginTest,
-//SearchTest(override runTest)
+//clase copil:LoginTest, SearchTest(override runTest)
 //în main:
 //rulează mai multe teste
 
