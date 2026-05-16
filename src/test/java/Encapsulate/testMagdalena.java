@@ -66,7 +66,7 @@ public class testMagdalena {
             }
             balance -= amount;
 
-            curs.BankAccount bankAccount = new curs.BankAccount("asd", "123123", 2.0);
+            curs.ExerciseAutomation.BankAccount bankAccount = new curs.ExerciseAutomation.BankAccount("asd", "123123", 2.0);
             bankAccount.setOwner("tada");
             bankAccount.getOwner();
         }

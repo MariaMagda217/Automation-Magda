@@ -1,6 +1,6 @@
 package curs.SauceDemo;
 
-import curs.Pages.*;
+import curs.POMPages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
